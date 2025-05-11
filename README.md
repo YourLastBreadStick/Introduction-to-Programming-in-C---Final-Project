@@ -1,2 +1,4 @@
-# Introduction-to-Programming-in-C---Final-Project
-Load the stats or compare stats of bosses from the game Terraria
+# Description
+This is my final project for my Introduction to Progamming in C# class. As a final project we could a project over anything that met the requirements listed by the teacher, so I chose to make mine about Terraria. I had many struggles making it, but what's the point in a final if you don't struggle at least a little right? I ended up aceing both the pseudocode and the final product sections so I think I did pretty good.
+# How to use
+At the top is a button labeled Add Boss, clicking it will open a new boss adder form. This newly opened form will first requires that you choose the game in which to grab the bosses and difficulties from. There are 4 to choose from: Vanilla, Calamity, Thorium, and Fargo's Souls. Once you have chosen your game it will then fill the other 2 combo boxes, you then choose a boss and a difficulty from their respective lists. Press the Accept button to then send your selection to the library. The Clear buttons will clear their respective areas. You can then load the stats, it will load all the stats of a given boss if you only have 1 boss, and will compare the non-list stats if you have 2 bosses.
