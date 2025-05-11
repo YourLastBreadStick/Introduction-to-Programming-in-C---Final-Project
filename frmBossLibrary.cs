@@ -59,25 +59,33 @@ namespace Final_TerrariaBossInfo_AKG
             string msg = "";
             if (game == 0) // search the Vanilla Json file
             {
-                string json = File.ReadAllText("vanilla_array.json");
+                string projectRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\"));
+                string jsonPath = Path.Combine(projectRoot, "Json data", "vanilla_array.json");
+                string json = File.ReadAllText(jsonPath);
                 string[][][] data = JsonSerializer.Deserialize<string[][][]>(json);
                 msg = data[category][boss][difficulty];
             }
             if (game == 1) // search the Calamity Json file
             {
-                string json = File.ReadAllText("calamity_array.json");
+                string projectRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\"));
+                string jsonPath = Path.Combine(projectRoot, "Json data", "calamity_array.json");
+                string json = File.ReadAllText(jsonPath);
                 string[][][] data = JsonSerializer.Deserialize<string[][][]>(json);
                 msg = data[category][boss][difficulty];
             }
             if (game == 2) // search the Thorium Json file
             {
-                string json = File.ReadAllText("thorium_array.json");
+                string projectRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\"));
+                string jsonPath = Path.Combine(projectRoot, "Json data", "thorium_array.json");
+                string json = File.ReadAllText(jsonPath);
                 string[][][] data = JsonSerializer.Deserialize<string[][][]>(json);
                 msg = data[category][boss][difficulty];
             }
             if (game == 3) // search the Fargo's Souls Json file
             {
-                string json = File.ReadAllText("fargos_souls_array.json");
+                string projectRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\"));
+                string jsonPath = Path.Combine(projectRoot, "Json data", "fargos_souls_array.json");
+                string json = File.ReadAllText(jsonPath);
                 string[][][] data = JsonSerializer.Deserialize<string[][][]>(json);
                 msg = data[category][boss][difficulty];
             }
